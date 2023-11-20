@@ -2,13 +2,14 @@
 
 
 def greeting(name: str) -> str:
-    """Returns greetings string.
+    """Return greetings string.
 
-      Args:
-          name: Username
+    Args:
+        name: Usernamecd app
 
-      Returns:
-          str: greetings string
-      """
+
+    Returns:
+        str: greetings string
+    """
     capitalized_name = ' '.join([word.capitalize() for word in name.split()])
-    return f"Greetings, {capitalized_name}"
+    return 'Greetings, {name}'.format(name=capitalized_name)
