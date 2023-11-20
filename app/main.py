@@ -1,14 +1,14 @@
 """Генератор приветствий."""
-import pprint
+# import pprint
 
-def Greeting(name: str) -> str:
-      """Возвращает текст приветствия.
+
+def greeting(name: str) -> str:
+    """Возвращает текст приветствия.
 
       Args:
           name: Имя пользователя
 
       Returns:
-          int: Текст приветствия
+          str: Текст приветствия
       """
-      # pprint.pprint(name.lower())
-      return 'Привет, name'
+    return f'Привет, {" ".join([word.capitalize() for word in name.split()])}'
